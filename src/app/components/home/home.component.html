@@ -1,0 +1,44 @@
+<ul ngbNav #nav="ngbNav" class="nav-tabs">
+	<li ngbNavItem>
+		<a ngbNavLink>Observals</a>
+		<ng-template ngbNavContent>
+			<div class="container">
+                <div class="row">
+                  <div class="col-sm">
+                    <div class="col-3">
+                        <div class="card" style="width: 18rem;">
+                          <div class="card-body">
+                            <h5 class="card-title">Form Event</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div><a href="#" class="btn btn-primary pull-right">Check</a></div>
+                          </div>
+                        </div>
+                        </div>
+                  </div>
+                  <div class="col-sm">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Form Event</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <div><a href="#" class="btn btn-primary pull-right">Check</a></div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-sm">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Form Event</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <div><a  class="btn btn-primary pull-right" (click)="goTo()">Check</a></div>
+                        </div>
+                      </div>
+                  </div>
+                  
+                </div>
+              </div>
+		</ng-template>
+	</li>
+	
+</ul>
+
+<div [ngbNavOutlet]="nav" class="mt-2"></div>
